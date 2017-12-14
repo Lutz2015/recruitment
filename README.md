@@ -1,6 +1,7 @@
 # recruitment
 基于Vue.js的招聘网的实现，后端采用Node+Express技术（未完成）
 
+# 前台
 主页
 
 ![image](https://github.com/wokeyi/recruitment/blob/master/images/home.png)
@@ -33,7 +34,7 @@
 
 ![image](https://github.com/wokeyi/recruitment/blob/master/images/preview.png)
 
-#后台
+# 后台
 后台主页
 
 ![image](https://github.com/wokeyi/recruitment/blob/master/images/node-index.png)
