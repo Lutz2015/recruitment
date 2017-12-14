@@ -36,7 +36,7 @@
 #后台
 后台主页
 
-![image](https://github.com/wokeyi/recruitment/blob/master/images/node-indedx.png)
+![image](https://github.com/wokeyi/recruitment/blob/master/images/node-index.png)
 
 求职者管理
 
