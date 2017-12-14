@@ -6,9 +6,9 @@
 
 ![image](https://github.com/wokeyi/recruitment/blob/master/images/home.png)
 
-主页（响应式）
+![image](https://github.com/wokeyi/recruitment/blob/master/images/home-671px.png)
 
-![image](https://github.com/wokeyi/recruitment/blob/master/images/home-505.png)
+![image](https://github.com/wokeyi/recruitment/blob/master/images/home-326px.png)
 
 登录
 
