@@ -1,0 +1,10 @@
+#alert {
+    position: fixed;
+    z-index: 99;
+    top: 10px;
+    right: 20px;
+}
+
+.modal .modal-body .delete h4 {
+    text-align: center;
+}

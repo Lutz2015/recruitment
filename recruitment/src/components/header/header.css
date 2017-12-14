@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #e6e6e6;
+  padding: 0 40px;
+}
+
+header .blank {
+  line-height: 60px;
+  margin: 0;
+}
+
+header .el-menu {
+  border-bottom: none;
+}
+
+header .el-menu .el-menu-item.is-active {
+  color: #409EFF;
+}
+
+header .el-menu .el-submenu .el-menu-item {
+  min-width: 100px;
+  text-align: center;
+}

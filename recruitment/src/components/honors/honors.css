@@ -1,0 +1,7 @@
+.honors .desc {
+  width: calc(100% - 100px);
+}
+
+.honors .desc .el-form-item__content {
+  width: calc(100% - 100px);
+}

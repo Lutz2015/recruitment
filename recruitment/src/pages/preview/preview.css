@@ -1,0 +1,132 @@
+/* 简历 */
+.preview .resume {
+  width: 820px;
+  display: flex;
+  box-shadow: 8px 1px 10px #d8d8d8;
+  margin: 50px auto;
+}
+
+.preview .resume .wrapper > .title {
+  border-bottom: 1px solid #254665;
+  padding: 2px 0;
+}
+
+/* 简历左边信息 */
+.preview .resume .left {
+  width: 270px;
+  background-color: #254665;
+  color: #FFFFFF;
+}
+
+.preview .resume .left .wrapper {
+  padding: 0 30px;
+  border: 1px solid #254665;
+}
+
+.preview .resume .left .image-wrapper {
+  width: 120px;
+  height: 150px;
+  border: 2px solid #FFFFFF;
+  background-color: #FFFFFF;
+  margin: 60px auto 0;
+}
+
+.preview .resume .left .image-wrapper img {
+  width: 120px;
+  height: 150px;
+}
+
+.preview .resume .left .base-info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.preview .resume .left .base-info span {
+  margin: 6px 0;
+}
+
+.preview .resume .left .specialty .list .item {
+  margin-bottom: 12px;
+}
+
+.preview .resume .left .specialty .level {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.preview .resume .left .specialty .level > span {
+  width: 60px;
+  text-align: center;
+}
+
+.preview .resume .left .specialty .progress-wrapper {
+  width: calc(100% - 60px);
+  height: 10px;
+}
+
+/* 简历右边信息 */
+.preview .resume .right {
+  flex: 1;
+  color: #254665;
+  padding: 20px 20px 30px 20px;
+}
+
+.preview .resume .right .list .item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.preview .resume .right .list .item .title {
+  margin: 4px 0;
+}
+
+.preview .resume .right .list .item .title > span {
+  margin-right: 40px;
+}
+
+.preview .resume .right .wrapper {
+  border: 1px solid #FFFFFF;
+}
+
+.preview .resume .right .name-wrapper {
+  display: flex;
+  vertical-align: bottom;
+  align-items: baseline;
+  margin: 8px 0;
+  border: 1px solid #FFFFFF;
+}
+
+.preview .resume .right .name-wrapper h1 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.preview .resume .right .name-wrapper span {
+  font-size: 15px;
+  height: 20px;
+  margin-left: 16px;
+  color: #7a7a7a;
+}
+
+.preview .resume .right .job-intention .intention > span {
+  margin-right: 24px;
+}
+
+.preview .resume .right .education .item .desc,
+.preview .resume .right .projects .item .desc,
+.preview .resume .right .honors .honor,
+.preview .resume .right .self-evaluation .evaluation,
+.preview .resume .right .internship .item .desc {
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.preview .resume .right .honors .honor {
+  margin: 2px 0;
+}
+
+.preview .resume .right .internship .item ul li {
+  list-style: disc;
+  margin: 4px 0 0 20px;
+}

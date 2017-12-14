@@ -1,0 +1,69 @@
+extends ../layout/manage-page
+
+block title
+    title 用户管理 - Recruitment-后台管理
+block append styles
+    link(rel='stylesheet', href='/css/jobseeker/index.css')
+block options
+    option(value='phone') 手机号码
+    option(value='email') 邮箱
+    option(value='address') 地址
+block append buttons
+    a.btn.btn-success.pull-right#add 增加用户
+block result-count
+    if data.status === 0 && data.data
+        p.text-muted 为您找到#{data.data.count}条用户数据
+    else
+        p.text-danger 查找出错了
+block table-head
+    tr
+        th #
+        th 手机号码
+        th.hidden-xxs 邮箱
+        th 住址
+        th.hidden-xs 注册日期
+        th 操作
+block table-body
+    if data.status === 0 && data.data
+        -var date = new Date()
+        each item,i in data.data.list
+            -date.setTime(item.userId)
+            tr
+                td=i + 1
+                td=item.phone
+                td.email.hidden-xxs=item.email || '-'
+                td.address=item.address || '-'
+                td.hidden-xs=date.toLocaleDateString()
+                td.op
+                    a.btn.btn-xs.btn-info.hidden-xs 查看详情
+                    a.btn.btn-xs.btn-success 编辑
+                    a.btn.btn-xs.btn-danger #{item.usable ? '封禁' : '解封'}
+block modal-body
+    .delete.hide
+        h4.text-danger 确定删除某某某
+    .modify.form-horizontal.hide
+        .form-group
+            label.control-label.col-sm-3 手机号码
+            .col-sm-8
+                input.form-control.phone(type='tel', readonly='true')
+        .form-group
+            label.control-label.col-sm-3 邮箱
+            .col-sm-8
+                input.form-control.email(type='email')
+        .form-group
+            label.control-label.col-sm-3 地址
+            .col-sm-8
+                input.form-control.address(type='address')
+    .add.form-horizontal.hide
+        .form-group
+            label.control-label.col-sm-3 手机号码
+            .col-sm-8
+                input.form-control.phone(type='tel', data-toggle="popover", data-placement="top", data-trigger="focus")
+        .form-group
+            label.control-label.col-sm-3 密码
+            .col-sm-8
+                input.form-control.password(type='password')
+block append scripts
+    script
+        | var __data = !{JSON.stringify(data)};
+    script(type='text/javascript', src='/js/jobseeker/index.js')

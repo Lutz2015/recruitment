@@ -1,0 +1,39 @@
+﻿.navbar {
+    margin-bottom: 0;
+}
+
+.container-fluid {
+    position: relative;
+    padding: 0;
+    background-color: #67ACE4;
+}
+
+.images-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.img-404 {
+    margin: 40px 0;
+}
+
+a.btn {
+    margin: 30px 0;
+}
+
+img.cloud {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 2px;
+    border-radius: 1px;
+    background-color: #b1b1b1;
+}

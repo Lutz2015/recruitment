@@ -1,0 +1,24 @@
+extends ../layout/manage-page
+
+block title
+    title 用户管理 - Recruitment-后台管理
+block append styles
+    link(rel='stylesheet', href='/css/company/index.css')
+block options
+    option(value='companyName') 公司名
+    option(value='name') 联系人姓名
+    option(value='phone') 联系人手机
+    option(value='email') 联系人邮箱
+    option(value='address') 地址
+block table-head
+    tr
+        th #
+        th 公司名
+        th 联系人姓名
+        th 联系人邮箱
+        th 地址
+        th 操作
+block append scripts
+    script
+        | var __data = !{JSON.stringify(data)}
+        | console.log(__data)

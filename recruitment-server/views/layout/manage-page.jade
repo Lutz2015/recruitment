@@ -1,0 +1,55 @@
+extends base-page
+
+block main-content
+    .container-fluid
+        .row
+            .col-md-12.column
+                .tabbabel
+                    ul.nav.nav-tabs
+                        //- 循环遍历菜单
+                        each item in menu
+                            if item.active
+                                li.active
+                                    a(href=item.link)= item.name
+                            else
+                                li
+                                    a(href=item.link)= item.name
+                .tab-content.container-fluid
+                    //- 页面主体内容（主体内容插槽）
+                    block content
+                        .row
+                            .form-group.col-sm-2.col-md-2
+                                select.form-control.search-mode
+                                    //- 插入选择查找方式的option
+                                    block options
+                            .form-group.col-sm-5.col-md-5.key-form
+                                input.form-control#keyword(type='text', placeholder='输入查找的关键字（不填默认搜索全部）')
+                            .form-group.col-sm-5.col-md-5
+                                //- 按钮组（按钮插槽）
+                                block buttons
+                                    button.btn.btn-default#searchBtn 搜索
+                        //- 数据结果信息
+                        block result-count
+                        table.table.table-striped.table-hover
+                            thead
+                                //- 表格头部插槽
+                                block table-head
+                            tbody
+                                //- 表格数据插槽
+                                block table-body
+                    #pagination
+                        block pagination
+    //- 模态框
+    .modal.fade#modal-container(aria-hidden="true", role='dialog', data-backdrop="false")
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-hidden="true", aria-label="Close")
+                        span(aria-hidden="true") &times;
+                    h4.modal-title
+                .modal-body
+                    //- 模态框主体数据（插槽
+                    block modal-body
+                .modal-footer
+                    button.btn.btn-default(type='button', data-dismiss='modal') 关闭
+                    button.btn.btn-primary#confirm(type='button') 确定

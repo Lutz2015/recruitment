@@ -1,0 +1,42 @@
+.resumes {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.resumes .el-select .el-input {
+  width: 120px;
+}
+
+.resumes .add-resume-btn {
+  float: right;
+}
+
+.resumes .data-content {
+  flex: 1;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.resumes .data-content .el-table {
+  flex: 1;
+}
+
+.resumes .el-pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.resumes .is-default-td .el-button {
+  display: none;
+}
+
+.resumes .is-default-td:hover .el-button {
+  display: inline-block;
+}
+
+.resumes .op-td .cell {
+  display: flex;
+}

@@ -1,0 +1,7 @@
+.projects .desc {
+  width: calc(100% - 100px);
+}
+
+.projects .desc .el-form-item__content {
+  width: calc(100% - 100px);
+}

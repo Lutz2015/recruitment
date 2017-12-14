@@ -1,0 +1,47 @@
+extends ../layout/base-page
+
+block append styles
+    link(rel='stylesheet', href='/css/jobseeker/info.css')
+block main-content
+    ul.breadcrumb
+        li
+            a(href='/') 后台管理
+        li
+            a(href='/jobseekers') 用户管理
+        li.active 用户信息
+    .container-fluid
+        .row.base-info
+            .col-md-8
+                h4.phone 手机号码:
+                    span.text-info=data.phone
+                h4.email 邮箱：
+                    span.text-info=data.email || '未绑定邮箱'
+            .col-md-4.text-right
+                if data.usable
+                    a.btn.btn-danger.btn-md.blocked 封禁
+                else
+                    a.btn.btn-danger.btn-md.blocked 解封
+        .tabbabel
+            ul.nav.nav-tabs
+                li.active
+                    a(href='#resumeList', data-toggle='tab') 简历列表
+                li
+                    a(href='#applyList', data-toggle='tab') 申请列表
+                li
+                    a(href='#favorite', data-toggle='tab') 他的关注
+                li
+                    a(href='#visit', data-toggle='tab') 访问记录
+        .tab-content
+            #resumeList.tab-pane.active
+                include ./resume
+            #applyList.tab-pane
+                include ./apply
+            #favorite.tab-pane
+                include ./favorite
+            #visit.tab-pane
+                include ./visit
+
+block append scripts
+    script
+        | var __data = !{JSON.stringify(data)}
+    script(type='text/javascript', src='/js/jobseeker/info.js')

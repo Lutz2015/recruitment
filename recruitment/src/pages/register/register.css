@@ -1,0 +1,43 @@
+.register-page {
+  background-color: #5a8ad8;
+  padding: 80px 0;
+}
+
+.register-page .phone-wrap {
+  display: flex;
+}
+
+.register-page .phone-wrap input[type=tel] {
+  flex: 1;
+  border: none;
+  outline: none;
+}
+
+.register-page .send-code {
+  border: none;
+  outline: none;
+  font-size: 13px;
+  background-color: #d8a90c;
+  color: #FFFFFF;
+}
+
+.register-page .send-code:hover {
+  background-color: #b8900a;
+}
+
+.to-login {
+  text-align: right;
+  padding: 12px 0;
+}
+
+@media (max-width: 600px) {
+  .register-page {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .register-page {
+    padding: 0;
+  }
+}

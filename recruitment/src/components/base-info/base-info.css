@@ -1,0 +1,13 @@
+.base-info {
+  padding-top: 10px;
+}
+
+.base-info .el-form {
+  width: 460px;
+}
+
+.base-info .user-avatar {
+  width: 120px;
+  margin-left: 80px;
+  margin-bottom: 8px;
+}

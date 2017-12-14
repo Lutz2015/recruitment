@@ -1,0 +1,41 @@
+doctype html
+html
+    head
+        meta(name='viewport', content='width=device-width,initial-scale=1.0,user-scalable=no')
+        //- 页面标题插槽
+        block title
+            title Recruitment-后台管理
+        //- 样式表插槽
+        block styles
+            link(rel='stylesheet', href='/css/libs/bootstrap.min.css')
+            link(rel='stylesheet', href='/css/libs/toastr.min.css')
+            link(rel='stylesheet', href='/css/common/global.css')
+    body
+        //- header
+        haeder
+            nav.navbar.navbar-default
+                .navbar-header
+                    a.navbar-brand Recruitment
+                .collapse.navbar-collapse
+                    if session && session.admin !== null
+                        ul.nav.navbar-nav.navbar-right
+                            li.dropdown
+                                a.dropdown-toggle(href='#', data-toggle='dropdown') Username
+                                    b.caret
+                                ul.dropdown-menu
+                                    li
+                                        a 个人资料
+                                    li.divider
+                                    li
+                                        a 退出登录
+        //- 主内容插槽
+        block main-content
+        footer
+            span ©copyright logan. All rights reserved
+        //- 脚本插槽
+        block scripts
+            script(type='text/javascript', src='/js/libs/jquery.js')
+            script(type='text/javascript', src='/js/libs/bootstrap.min.js')
+            script(type='text/javascript', src='/js/libs/toastr.min.js')
+            script(type='text/javascript', src='/js/common/global.js')
+

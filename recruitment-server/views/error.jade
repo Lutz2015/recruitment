@@ -1,0 +1,6 @@
+extends layout/base-page
+
+block main-content
+  h1= message
+  h2= err.status
+  pre #{err.stack}

@@ -1,0 +1,50 @@
+.add-resume {
+  width: 100%;
+  min-height: 550px;
+  display: flex;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+}
+
+.add-resume .menu {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #e7e7e7;
+}
+
+.add-resume .menu .el-header {
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-resume .menu .el-header .el-input__inner {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.add-resume .menu .el-header .save-button {
+  margin-bottom: 20px;
+}
+
+.add-resume .steps-wrapper {
+  flex: 1;
+  padding: 20px 32px;
+}
+
+.add-resume .el-steps.el-steps--vertical {
+  max-height: 450px;
+}
+
+.add-resume .content {
+  flex: 1;
+  padding: 24px;
+}
+
+.add-resume .el-breadcrumb {
+  margin-bottom: 30px;
+}
+
+.add-resume .buttons {
+  margin-top: 20px;
+}

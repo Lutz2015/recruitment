@@ -1,0 +1,7 @@
+.work .desc {
+  width: calc(100% - 100px);
+}
+
+.work .desc .el-form-item__content {
+  width: calc(100% - 100px);
+}

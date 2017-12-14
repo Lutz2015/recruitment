@@ -1,0 +1,30 @@
+.login-page {
+  background-color: #5a8ad8;
+  padding: 80px 0;
+}
+
+.reg-and-forget {
+  padding: 12px 0;
+  text-align: right;
+}
+
+.reg-and-forget .link {
+  color: #787878;
+  font-size: 14px;
+}
+
+.reg-and-forget .link:first-child {
+  margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+  .login-page {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .login-page {
+    padding: 0;
+  }
+}

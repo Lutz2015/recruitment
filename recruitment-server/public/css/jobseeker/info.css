@@ -1,0 +1,25 @@
+.base-info {
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 0 0 20px 0;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: none;
+}
+
+.breadcrumb {
+    background-color: #f8f8f8;
+}
+
+.base-info .phone,
+.base-info .email {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.base-info .blocked {
+    margin-left: 12px;
+}

@@ -1,0 +1,15 @@
+extends layout/base-page
+
+block title
+    title 页面未找到 - Recruitment-后台管理
+block styles
+    link(rel='stylesheet',href='/css/libs/bootstrap.min.css')
+    link(rel='stylesheet',href='/css/common/global.css')
+    link(rel='stylesheet',href='/css/404.css')
+block main-content
+    .container-fluid
+        .images-wrapper
+            img.img-404(src='/images/404.png')
+            img(src='/images/404_msg.png')
+            a(href='/').btn.btn-success.btn-lg 返回首页
+        img.cloud(src='/images/error_cloud.png')
